@@ -163,10 +163,11 @@
         margin-top: 15px;
       
         padding: 0;
-        width: 400px;
+        width: 350px;
+        gap: 10px;
     }
     .todoinput input{
-        min-width: 300px;
+        min-width: 250px;
     }
     .input-list{
         width: 100%;
