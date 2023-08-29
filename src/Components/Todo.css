@@ -1,0 +1,143 @@
+.container{
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 60px 10%;
+    height: 100%;
+    width: 100vw;
+}
+.container h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.todoinput{
+    width: 700px;
+    padding: 10px 30px;
+    margin: 20px;
+   display: flex;
+   gap: 20px;
+}
+.todoinput input{
+    outline: none;
+    padding: 10px 40px;
+    min-width: 500px;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-size: 20px;
+    transition: .2s ease;
+}
+.todoinput input:hover{
+    background-color: rgba(41, 41, 41, 0.497);
+}
+.todoinput button{
+    border: 1px solid white;
+    padding: 10px 40px;
+    border-radius: 30px;
+   font-size: 20px;
+   transition: .2s ease;
+   background-color: rgba(41, 41, 41, 0.497);
+}
+.todoinput button:hover{
+    background-color: rgba(2, 179, 72, 0.741);
+}
+.input-list{
+    background-color: rgb(43, 43, 43);
+    border-radius: 30px;
+    height: 100%;
+    width: 70%;
+    padding: 20px 50px;
+    text-align:left;
+    
+}
+
+.input-list ul li{
+    gap: 20px;
+    border-bottom: 1px solid white;
+    padding: 12px 10px;
+    background-color: rgb(43, 43, 43);
+    list-style-type: decimal;
+    
+}
+.input-list ul li span{
+    font-size: 30px;
+    font-weight: 400;
+    width: 500px;
+    
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(43, 43, 43);
+}
+
+.todotext{
+    width: 500px;
+    background-color: rgb(43, 43, 43);
+    overflow: hidden;
+    
+}
+
+.todotext span{
+    background-color: rgb(43, 43, 43);
+}
+.flex .buttons{
+    display: flex;
+    gap: 20px;
+    background-color: rgb(43, 43, 43);
+}
+
+.padbtn{
+    padding: 5px 9px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        
+        padding: 50px 3%;
+      
+        width: 100vw;
+    }
+    .container h1{
+        font-size: 2rem;
+    }
+    .todoinput{
+        margin-top: 15px;
+      
+        padding: 0;
+        width: 400px;
+    }
+    .todoinput input{
+        min-width: 300px;
+    }
+    .input-list{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    .todoinput button{
+       
+        padding: 5px 25px;
+      
+       font-size: 15px;
+       
+    }
+    .todotext{
+        width: 300px;
+    }
+    .flex .buttons{
+       justify-content: right;
+       gap: 3px;
+    }
+  
+  }
+
+  
