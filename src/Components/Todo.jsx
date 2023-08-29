@@ -49,7 +49,7 @@ const Todo = () => {
           placeholder="Enter a task"
           autoFocus
         />
-        <button onClick={addTodo}>
+        <button className="addbtn" onClick={addTodo}>
           {editingIndex !== null ? "Update" : "Add"}
         </button>
       </div>

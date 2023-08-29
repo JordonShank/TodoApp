@@ -32,7 +32,7 @@
 .todoinput input:hover{
     background-color: rgba(41, 41, 41, 0.497);
 }
-.todoinput button{
+/* .todoinput button{
     border: 1px solid white;
     padding: 10px 40px;
     border-radius: 30px;
@@ -42,10 +42,62 @@
 }
 .todoinput button:hover{
     background-color: rgba(2, 179, 72, 0.741);
+} */
+
+/* *************************** */
+.addbtn{
+    position: relative;
+    background-color: black;
+    border-radius: 4em;
+    font-size: 16px;
+    color: white;
+    padding: 0.8em 1.8em;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
 }
+.addbtn:hover{
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+  }
+  .addbtn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+  
+  .addbtn:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .addbtn:active {
+    top: 1px;
+  }
+
+
+  /* ****************************************** */
 .input-list{
     background-color: rgb(43, 43, 43);
     border-radius: 30px;
+    min-height: 400px;
     height: 100%;
     width: 70%;
     padding: 20px 50px;
@@ -101,7 +153,7 @@
     .container{
         
         padding: 50px 3%;
-      
+      width: ;
         width: 100vw;
     }
     .container h1{
